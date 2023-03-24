@@ -1,0 +1,13 @@
+<oixp:oiDataCollection xmlns:oixp="http://www.jmmc.fr/oiexplorer-data-collection/0.1">
+    <!-- http://oidb.jmmc.fr/exist/apps/oidb/search.html?conesearch=HD%2039060%2CJ2000%2C2%2Carcmin&progid=094.C-0232%28A%29&cs_radius_unit=arcmin&cs_equinox=J2000&order=t_min&category=SCIENCE&cs_radius=2&cs_position=HD%2039060 -->
+    <!-- SELECT DISTINCT  t.access_url FROM oidb AS t WHERE ( CONTAINS(POINT('ICRS', t.s_ra, t.s_dec), CIRCLE('ICRS', 86.82119870875, -51.06651142639, 0.03333333333333333))=1 ) AND ( t.progid LIKE '094.C-0232(A)' ) AND ( t.dataproduct_category LIKE 'SCI%' OR t.dataproduct_category IS NULL ) AND ( NOT t.calib_level=0 )   -->
+    <file>
+        <file>http://apps.jmmc.fr/oidata/pionier/PIONI.2014-10-12T06:26:19.287_oidataCalibrated.fits</file>
+    </file>
+    <file>
+        <file>http://apps.jmmc.fr/oidata/pionier/PIONI.2014-10-12T06:42:57.207_oidataCalibrated.fits</file>
+    </file>
+    <file>
+        <file>http://apps.jmmc.fr/oidata/pionier/PIONI.2014-10-12T06:57:58.683_oidataCalibrated.fits</file>
+    </file>
+</oixp:oiDataCollection>

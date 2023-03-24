@@ -1,0 +1,46 @@
+<oixp:oiDataCollection xmlns:oixp="http://www.jmmc.fr/oiexplorer-data-collection/0.1">
+    <!-- http://oidb.jmmc.fr/exist/apps/oidb/search.html?conesearch=HD%2039060%2CJ2000%2C2%2Carcmin&progid=088.C-0266%28A%29&cs_radius_unit=arcmin&cs_equinox=J2000&order=t_min&category=SCIENCE&cs_radius=2&cs_position=HD%2039060 -->
+    <!-- SELECT DISTINCT  t.access_url FROM oidb AS t WHERE ( CONTAINS(POINT('ICRS', t.s_ra, t.s_dec), CIRCLE('ICRS', 86.82119870875, -51.06651142639, 0.03333333333333333))=1 ) AND ( t.progid LIKE '088.C-0266(A)' ) AND ( t.dataproduct_category LIKE 'SCI%' OR t.dataproduct_category IS NULL ) AND ( NOT t.calib_level=0 )   -->
+    <file>
+        <file>http://apps.jmmc.fr/oidata/pionier/PIONIER_OBS_OBS307_0148_oidataCalibrated.fits</file>
+    </file>
+    <file>
+        <file>http://apps.jmmc.fr/oidata/pionier/PIONIER_OBS_OBS307_0164_oidataCalibrated.fits</file>
+    </file>
+    <file>
+        <file>http://apps.jmmc.fr/oidata/pionier/PIONIER_OBS_OBS307_0180_oidataCalibrated.fits</file>
+    </file>
+    <file>
+        <file>http://apps.jmmc.fr/oidata/pionier/PIONIER_OBS_OBS307_0200_oidataCalibrated.fits</file>
+    </file>
+    <file>
+        <file>http://apps.jmmc.fr/oidata/pionier/PIONIER_OBS_OBS307_0216_oidataCalibrated.fits</file>
+    </file>
+    <file>
+        <file>http://apps.jmmc.fr/oidata/pionier/PIONIER_OBS_OBS307_0232_oidataCalibrated.fits</file>
+    </file>
+    <file>
+        <file>http://apps.jmmc.fr/oidata/pionier/PIONIER_OBS_OBS307_0252_oidataCalibrated.fits</file>
+    </file>
+    <file>
+        <file>http://apps.jmmc.fr/oidata/pionier/PIONIER_OBS_OBS307_0268_oidataCalibrated.fits</file>
+    </file>
+    <file>
+        <file>http://apps.jmmc.fr/oidata/pionier/PIONIER_OBS_OBS307_0284_oidataCalibrated.fits</file>
+    </file>
+    <file>
+        <file>http://apps.jmmc.fr/oidata/pionier/PIONIER_OBS_OBS307_0304_oidataCalibrated.fits</file>
+    </file>
+    <file>
+        <file>http://apps.jmmc.fr/oidata/pionier/PIONIER_OBS_OBS307_0324_oidataCalibrated.fits</file>
+    </file>
+    <file>
+        <file>http://apps.jmmc.fr/oidata/pionier/PIONIER_OBS_OBS307_0340_oidataCalibrated.fits</file>
+    </file>
+    <file>
+        <file>http://apps.jmmc.fr/oidata/pionier/PIONIER_OBS_OBS307_0356_oidataCalibrated.fits</file>
+    </file>
+    <file>
+        <file>http://apps.jmmc.fr/oidata/pionier/PIONIER_OBS_OBS307_0372_oidataCalibrated.fits</file>
+    </file>
+</oixp:oiDataCollection>
