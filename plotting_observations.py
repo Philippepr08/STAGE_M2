@@ -92,4 +92,5 @@ class Plotting_obs:
 
         last_obs_date = self.nights[-1]
         fig.suptitle(f"Observations of {self.obs_dic['Target_name']}", fontsize=25)
-        plt.savefig(save_path + f"{self.obs_dic['Target_name']}_observations_{last_obs_date.month}_{last_obs_date.year}.png")
+        if save:
+            plt.savefig(save_path + f"{self.obs_dic['Target_name']}_observations_{last_obs_date.month}_{last_obs_date.year}.png")
