@@ -1,22 +1,8 @@
 # -*- coding: utf-8 -*-
 """
-Created on Fri Apr  7 11:30:20 2023
-
-@author: phili
-"""
-
-# -*- coding: utf-8 -*-
-"""
-Created on Wed Apr  5 11:20:02 2023
-
-@author: phili
-"""
-
-# -*- coding: utf-8 -*-
-"""
 Created on Thu Mar 30 13:40:37 2023
 
-@author: phili
+@author: Philippe Priolet
 """
 import numpy as np
 import scipy
@@ -24,16 +10,6 @@ import models_cosi as mdl
 import emcee
 
 from scipy.optimize import minimize
-
-
-# theta_limits_dic = {}
-
-# theta_limits_dic['inclination'] = (0,np.pi/2)
-
-# theta_limits_dic['int_radius'] = (0,R_int_max)
-
-# theta_limits_dic['ext_radius'] = (0,R_ext_max)
-
 
 
 class MCMC:
@@ -65,6 +41,7 @@ class MCMC:
         self.pa_max = 45
         self.pa_min = 20
         print('The limits are:','pa',(self.pa_min, self.pa_max),'cosi_tilt:',(self.cosi_tilt_min,self.cosi_tilt_max),',','a_in:',(self.ain_min,self.ain_max),',','da:',(self.da_min,self.da_max),',','f_ratio:',(self.flux_ratio_min,self.flux_ratio_max))
+    
     def log_prior(self,theta):
         pa,cosi_tilt, a_in,da,flux_ratio, f = theta
         if (cosi_tilt> self.cosi_tilt_min and cosi_tilt< self.cosi_tilt_max) and (a_in>self.ain_min and a_in<self.ain_max)  and (da>self.da_min and da<self.da_max) and (flux_ratio>self.flux_ratio_min and flux_ratio<self.flux_ratio_max) and (f>0 and f<1) and (self.pa_min<pa<self.pa_max):
