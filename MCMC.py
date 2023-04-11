@@ -64,8 +64,8 @@ class MCMC:
 
         pa,cosi_tilt, a_in,da,flux_ratio, f = theta
         model_vis2 = self.model(theta)
-        sn = (self.obs_err**2)+(f**2)*(self.model_vis2**2)
-        LL = -(1/2)*np.sum(((self.obs-self.model_vis2)**2/sn**2+np.log(2*np.pi*sn**2)))
+        sn2 = (self.obs_err**2)+(f**2)*(self.model_vis2**2)
+        LL = -(1/2)*np.sum(((self.obs-self.model_vis2)**2/sn2+np.log(2*np.pi*sn2)))
         return LL
     
     def get_posterior(self,theta):
