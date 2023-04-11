@@ -127,26 +127,9 @@ for i, night in enumerate(nights):
     print('Night number',i+1)
     vis_arr = []
     waves_arr = []
-    # for idx, wave in enumerate(waves):
-    #     print('Getting visibilities for wavelength:', round(wave*1e6,4),' µm','B:',B_u[i][idx],B_v[i][idx])
-    #     vis = vis_model_obj.evaluate_vis(wave,B_u[i][idx],B_v[i][idx],plot = False) 
-    #     vis_arr.append(vis**2)
-    #     waves_arr.append(wave)
         
     vis_dic_model['Waves'] = waves
     vis_dic_model['Vis2'] = vis2_stellar
-    # vis_dic_model['Vis2'] = np.concatenate(vis_dic_model['Vis2'])
-    # vis_dic_model['Waves'] = np.concatenate(vis_dic_model['Waves'])
-
-    # vis_dic_model['Night'] = night
-    # vis_dic_model['Name'] = f'Stellar model, R_star:{R_star_mas}'
-    # vis_dic_model['B_u'] = B_u[i]
-    # vis_dic_model['B_v'] = B_v[i]
-    # vis_dic_model['B'] = np.sqrt(B_v[i]**2+B_u[i]**2)
-
-
-    # vis_dic_model['Vis2'] = np.concatenate(vis_dic_model['Vis2'])
-    # vis_dic_model['Waves'] = np.concatenate(vis_dic_model['Waves'])
 
     model_star.append(vis_dic_model)
 #%%    

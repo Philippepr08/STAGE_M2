@@ -5,7 +5,7 @@ Created on Tue Apr 11 15:01:19 2023
 @author: phili
 """
 
-import plotting_observations as plt_vis
+import observation_plotter as plt_vis
 import get_observations as obs
 
 
